@@ -1,0 +1,138 @@
+/*===============================
+Sommario:
+1. RESET
+2. LAYOUT
+    A: HEADER
+    B: MAIN
+      - !!CONTAINER BLUE - 3 COLONNE!!
+    C: FOOTER
+3. CLASSI DI UTILITA'
+    A: Colori Background
+===============================*/
+
+/*----------------- 1. RESET -----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------- 2. TIPOGRAFIA ---------------*/
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------- 2. LAYOUT -----------------*/
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* >> A. HEADER >> */
+header {
+  padding: 25px 0;
+}
+
+/* >> B. MAIN >> */
+
+.container.yellow {
+  height: 500px;
+  margin-bottom: 25px;
+}
+
+/* !!CONTAINER BLUE - 3 COLONNE!! */
+
+.container.blue {
+  /* l'height è determinata dal contenuto:
+vedi "B. Container con 3 colonne"*/
+  padding-bottom: 15px;
+}
+
+.three_columns_header {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.column {
+  height: 550px;
+  float: left;
+  width: 30%;
+}
+
+.column.center {
+  width: calc(40% - 30px);
+  /*Viene sottratto lo spessore dei margini per non eccedere
+  il 100% della larghezza del container con la somma delle
+  tre colonne*/
+  margin: 0 15px;
+}
+
+/* >> C. FOOTER >> */
+
+footer {
+  padding: 10px 0 20px;
+}
+
+.container.purple {
+  height: 80px;
+}
+
+/*---------- STILIZZAZIONE COMPONENTI ----------*/
+
+.logo {
+  height: 70px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+}
+
+ul {
+  
+  word-spacing: -5px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  padding: 10px 15px;
+}
+
+nav li:first-of-type a{
+  padding-left: 0;
+}
+
+/*------------ 3. CLASSI DI UTILITA' ------------*/
+
+/* >> A. Colori background >> */
+
+
+
+.yellow {
+  background: gold;
+}
+
+.blue {
+  background: cornflowerblue;
+}
+
+.lightblue {
+  background: lightblue;
+}
+
+.purple {
+  background: purple;
+}
