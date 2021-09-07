@@ -33,10 +33,20 @@ Sommario:
   color: white;
 }
 
+.gray-text {
+  color: gray;
+}
+
 .hero h2 {
   font-size: 30px;
   font-weight: 400;
 }
+
+h1 {
+  font-size: 40px;
+}
+
+
 
 
 /*----------------- 2. LAYOUT -----------------*/
@@ -55,7 +65,7 @@ header {
 
 .hero {
   height: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 /* !!CONTAINER BLUE - 3 COLONNE!! */
@@ -67,18 +77,17 @@ vedi "B. Container con 3 colonne"*/
 }
 
 .three_columns_header {
-  height: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .column {
   height: 550px;
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 .column.center {
-  width: calc(40% - 30px);
+  width: calc(50% - 30px);
   /*Viene sottratto lo spessore dei margini per non eccedere
   il 100% della larghezza del container con la somma delle
   tre colonne*/
@@ -129,16 +138,20 @@ ul {
 /*MAIN*/
 
 /* A: Hero*/
-.hero {
-  background-image: url("../img/banner.jpg");
+
+.hero.image {
+  bottom: 15px;
 }
 
 .hero section {
   width: 50%;
   position: absolute;
   left: 50px;
-  bottom: 80px;
+  bottom: 70px;
 }
+
+/*B: 3 colonne*/
+
 
 
 
@@ -159,20 +172,28 @@ ul {
   background: purple;
 }
 
-.image-overlay-radius {
+.image_container {
+  height: 250px;
+}
+
+.image_overlay_radius {
   position: relative;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px;
   overflow: hidden;
 }
 
-.image-overlay-radius::before {
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_overlay_radius::before {
   content: "";
   background: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
