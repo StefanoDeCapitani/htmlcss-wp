@@ -29,14 +29,6 @@ Sommario:
   font-family: 'Montserrat', sans-serif;
 }
 
-.white-text {
-  color: white;
-}
-
-.gray-text {
-  color: gray;
-}
-
 .hero h2 {
   font-size: 30px;
   font-weight: 400;
@@ -46,8 +38,29 @@ h1 {
   font-size: 40px;
 }
 
+h3 {
+  font-weight: 300;
+  padding: 25px 0 15px;
+}
 
+.credits {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+}
 
+.white-text {
+  color: white;
+}
+
+.gray-text {
+  color: rgb(187, 186, 186);
+}
+
+.red-text {
+  color: red;
+}
 
 /*----------------- 2. LAYOUT -----------------*/
 
@@ -160,17 +173,7 @@ ul {
 
 /* >> A. Colori background >> */
 
-.blue {
-  background: cornflowerblue;
-}
 
-.lightblue {
-  background: lightblue;
-}
-
-.purple {
-  background: purple;
-}
 
 .image_container {
   height: 250px;
