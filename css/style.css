@@ -1,13 +1,16 @@
 /*===============================
 Sommario:
 1. RESET
-2. LAYOUT
+2. TIPOGRAFIA 
+  - Stilizzazione testi
+  - Classi di utilita': colore del testo
+3. LAYOUT
     A: HEADER
     B: MAIN
-      - !!CONTAINER BLUE - 3 COLONNE!!
+      - !!CONTAINER ARTICLE 3 COLONNE!!
     C: FOOTER
-3. CLASSI DI UTILITA'
-    A: Colori Background
+4. CLASSI DI UTILITA'
+    - Immagine cover con border-radius e overlay
 ===============================*/
 
 /*----------------- 1. RESET -----------------*/
@@ -17,13 +20,15 @@ Sommario:
   box-sizing: border-box;
 }
 
-.clearfix::after {
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
 
 /*--------------- 2. TIPOGRAFIA ---------------*/
+
+/* Stilizzazione testi */
 
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -44,11 +49,13 @@ h3 {
 }
 
 .credits {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   text-align: center;
   line-height: 80px;
 }
+
+/* Classi di utilita': colore del testo */
 
 .white-text {
   color: white;
@@ -62,7 +69,7 @@ h3 {
   color: red;
 }
 
-/*----------------- 2. LAYOUT -----------------*/
+/*----------------- 3. LAYOUT -----------------*/
 
 .container {
   width: 80%;
@@ -73,53 +80,6 @@ h3 {
 header {
   padding: 25px 0;
 }
-
-/* >> B. MAIN >> */
-
-.hero {
-  height: 500px;
-  margin-bottom: 35px;
-}
-
-/* !!CONTAINER BLUE - 3 COLONNE!! */
-
-.container.blue {
-  /* l'height è determinata dal contenuto:
-vedi "B. Container con 3 colonne"*/
-  padding-bottom: 15px;
-}
-
-.three_columns_header {
-  margin-bottom: 35px;
-}
-
-.column {
-  height: 550px;
-  float: left;
-  width: 25%;
-}
-
-.column.center {
-  width: calc(50% - 30px);
-  /*Viene sottratto lo spessore dei margini per non eccedere
-  il 100% della larghezza del container con la somma delle
-  tre colonne*/
-  margin: 0 15px;
-}
-
-/* >> C. FOOTER >> */
-
-footer {
-  padding: 10px 0 20px;
-}
-
-.container.purple {
-  height: 80px;
-}
-
-/*---------- STILIZZAZIONE COMPONENTI ----------*/
-
-/*HEADER*/
 
 .logo {
   height: 70px;
@@ -148,9 +108,12 @@ ul {
   padding-left: 0;
 }
 
-/*MAIN*/
+/* >> B. MAIN >> */
 
-/* A: Hero*/
+.container.hero {
+  height: 500px;
+  margin-bottom: 35px;
+}
 
 .hero.image {
   bottom: 15px;
@@ -163,21 +126,44 @@ ul {
   bottom: 70px;
 }
 
-/*B: 3 colonne*/
+/* !!CONTAINER ARTICLE 3 COLONNE!! */
 
+.container.article {
+  /* l'height è determinata dal contenuto:
+vedi "B. Container con 3 colonne"*/
+  padding-bottom: 15px;
+}
 
+.article_header {
+  margin-bottom: 35px;
+}
 
+.column {
+  float: left;
+  width: 25%;
+}
 
+.column.center {
+  width: calc(50% - 40px);
+  /*Viene sottratto lo spessore dei margini per non eccedere
+  il 100% della larghezza del container con la somma delle
+  tre colonne*/
+  margin: 0 20px;
+}
 
-/*------------ 3. CLASSI DI UTILITA' ------------*/
-
-/* >> A. Colori background >> */
-
-
-
-.image_container {
+.column .image_container {
   height: 250px;
 }
+
+/* >> C. FOOTER >> */
+
+footer {
+  padding: 10px 0 20px;
+}
+
+/*------------ 4. CLASSI DI UTILITA' ------------*/
+
+/* >> Immagine cover con border-radius e overlay >> */
 
 .image_overlay_radius {
   position: relative;

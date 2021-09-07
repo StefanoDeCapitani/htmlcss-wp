@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
   <head>
+    <!-- Collegamento a google fonts. Font: montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +13,10 @@
     <!-- Inizio header -->
     <header>
       <nav class="container nav-header">
+        <a href="#">
         <img class="logo" src="img/logo.png" alt="Logo Neori">
+        </a>
+        <!-- Inizio menù di navigazione -->
         <ul class>
           <li class="li_header"><a class="link_header" href="#">FEATURES</a></li>
           <li class="li_header"><a class="link_header" href="#">EDITORIALS</a></li>
@@ -21,6 +25,7 @@
           <li class="li_header"><a class="link_header" href="#">SHOP</a></li>
           <li class="li_header"><a class="link_header" href="#">CONTACT</a></li>
         </ul>
+        <!-- Fine menù di navigazione -->
       </nav>
     </header>
     <!-- Fine header -->
@@ -30,61 +35,71 @@
       <!-- Inizio primo container -->
       <div class="container hero image_overlay_radius">
         <img class="image" src="img/banner.jpg" alt="Ragazza che medita">
+        <!-- Inizio section testo su immagine hero -->
         <section class="white-text"> 
-        <h2>Pretium ac placerat dui interdum nunc in eros urna morbi</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum reprehenderit ut voluptas animi harum magni officia in adipisci delectus. </p>
-      </section>
+          <h2>Pretium ac placerat dui interdum nunc in eros urna morbi</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum reprehenderit ut voluptas animi harum magni officia in adipisci delectus. </p>
+        </section>
+        <!-- Fine section testo su immagine hero -->
       </div>
       <!-- Fine primo container -->
 
-      <!-- Inizio secondo container 3 colonne -->
-      <div class="container">
-        <!-- Inizio header sopra le colonne -->
-        <div class="three_columns_header">
+      <!-- Inizio secondo container: articolo con 3 colonne -->
+      <div class="container article">
+        <!-- Inizio header articolo con 3 colonne -->
+        <div class="article_header">
             <h1>Leadership</h1>
             <p class="gray-text">Fertenum urna a libero tempus</p>
         </div>
         <!-- Fine header sopra le colonne -->
 
-        <!-- Inizio main con colonne -->
-        <div class="three_columns_main clearfix">
-          <div class="column ">
+        <!-- Inizio 3 colonne -->
+        <div class="row">
+          <!-- Inizio prima colonna -->
+          <div class="column">
             <div class="image_container image_overlay_radius">
-              <img src="img/img-1.jpg" alt="" class="image">
+              <img src="img/img-1.jpg" alt="Crescita" class="image">
             </div>
             <section>
               <h3>Lorem</h3>
               <p class="gray-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti hic praesentium dolorum commodi facere aspernatur soluta totam animi qui architecto voluptas ducimus pariatur dolor, incidunt temporibus distinctio placeat facilis quibusdam! </p>
             </section>
           </div>
+          <!-- Fine prima colonna -->
+
+          <!-- Inizio seconda colonna -->
           <div class="column center">
             <div class="image_container image_overlay_radius">
-              <img src="img/banner-2.jpg" alt="" class="image">
+              <img src="img/banner-2.jpg" alt="Lavoro" class="image">
             </div>
             <section>
               <h3>Ipsum</h3>
               <p class="gray-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem nam ea esse distinctio minus modi ex, pariatur, iure enim non voluptatum, veritatis ipsa molestiae assumenda. Minima fugit vero sed veniam rerum quaerat laudantium, nam quidem soluta, recusandae corporis asperiores reprehenderit, at repellendus nulla sunt id. Qui magni praesentium suscipit quas hic consequatur corporis voluptatem aperiam vel excepturi ex blanditiis aliquid beatae dolores porro, voluptate, ab rem, ipsam officia quam voluptas illo. Aspernatur magni qui aperiam facilis tenetur minus suscipit recusandae dolorem nam nisi sapiente autem similique modi magnam, veniam necessitatibus eaque fugit alias earum dolore corporis exercitationem consequuntur fuga!</p>
             </section>
           </div>
+          <!-- Fine seconda colonna -->
+
+          <!-- Inizio terza colonna -->
           <div class="column">
             <div class="image_container image_overlay_radius">
-              <img src="img/img-3.jpg" alt="" class="image">
+              <img src="img/img-3.jpg" alt="Lavoro in team" class="image">
             </div>
               <section>
                 <h3>Lorem</h3>
                 <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium earum dolorum excepturi deleniti tempora fugiat suscipit nobis, debitis ea dolorem dicta! Aliquam excepturi, fugit numquam cumque nesciunt quia sed.</p>
               </section>
           </div>
+          <!-- Fine terza colonna -->
         </div>
-        <!-- Fine main con colonne -->
+        <!-- Fine 3 colonne -->
       </div>
-      <!-- Fine secondo container 3 colonne -->
+      <!-- Fine secondo container: articolo con 3 colonne -->
     </main>
     <!-- Fine main -->
 
     <!-- Inizio footer -->
     <footer>
-      <div class="container purple">
+      <div class="container footer">
         <div class="credits">Designed with <span class="red-text">&hearts;</span></div>
       </div>
     </footer>
