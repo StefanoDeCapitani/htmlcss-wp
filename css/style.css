@@ -29,6 +29,16 @@ Sommario:
   font-family: 'Montserrat', sans-serif;
 }
 
+.white-text {
+  color: white;
+}
+
+.hero h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
 /*----------------- 2. LAYOUT -----------------*/
 
 .container {
@@ -43,7 +53,7 @@ header {
 
 /* >> B. MAIN >> */
 
-.container.yellow {
+.hero {
   height: 500px;
   margin-bottom: 25px;
 }
@@ -87,6 +97,8 @@ footer {
 
 /*---------- STILIZZAZIONE COMPONENTI ----------*/
 
+/*HEADER*/
+
 .logo {
   height: 70px;
   padding-right: 30px;
@@ -95,35 +107,45 @@ footer {
 }
 
 ul {
-  
   word-spacing: -5px;
 }
 
-nav li {
+.li_header {
   list-style: none;
   display: inline-block;
 }
 
-nav a {
+.link_header {
   display: inline-block;
   text-decoration: none;
   color: gray;
   padding: 10px 15px;
 }
 
-nav li:first-of-type a{
+.li_header:first-of-type .link_header{
   padding-left: 0;
 }
+
+/*MAIN*/
+
+/* A: Hero*/
+.hero {
+  background-image: url("../img/banner.jpg");
+}
+
+.hero section {
+  width: 50%;
+  position: absolute;
+  left: 50px;
+  bottom: 80px;
+}
+
+
+
 
 /*------------ 3. CLASSI DI UTILITA' ------------*/
 
 /* >> A. Colori background >> */
-
-
-
-.yellow {
-  background: gold;
-}
 
 .blue {
   background: cornflowerblue;
@@ -135,4 +157,22 @@ nav li:first-of-type a{
 
 .purple {
   background: purple;
+}
+
+.image-overlay-radius {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-overlay-radius::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
